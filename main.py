@@ -11,9 +11,11 @@ class Contributor:
 
 
 class Projects:
-    def __init__(self, projectName, duration, bestBefore, rRoles):
+    def __init__(self, projectName, duration, bestBefore, rRoles, contributors):
         # note that the rRoles here is a list of required roles to complete this project
         self.projectName = projectName
         self.duration = duration
         self.bestBefore = bestBefore
         self.rRoles = rRoles
+        self.contributors = contributors
+        
